@@ -22,20 +22,15 @@ namespace Sweepstakes
             this.lastName = lastName;
             this.email = email;
             this.address = address;
-            this.registrationNumber = registrationNumber;
+            ReceiveRegistrationNumber();
         }
 
         //member methods
         public int ReceiveRegistrationNumber()
         {
-            registrationNumber = RandomNumber(0000, 9000);
-            return registrationNumber;
-        }
-
-        public int RandomNumber(int min, int max)
-        {
             Random random = new Random();
-            return random.Next(min, max);
+            registrationNumber = random.Next(0, 9999);
+            return registrationNumber;
         }
     }
 }
