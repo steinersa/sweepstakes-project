@@ -9,20 +9,19 @@ namespace Sweepstakes
     class SweepstakesStackManager : Isweepstakes
     {
         // member variables
+        Stack<Sweepstakes> stack = new Stack<Sweepstakes>();
 
         // constructor
 
         // member methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            Stack <sweepstakes> stack = new Stack();
-            stack.Push(//name of sweepstakes);
+            stack.Push(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            return
+            return stack.Pop();
         }
-
     }
 }

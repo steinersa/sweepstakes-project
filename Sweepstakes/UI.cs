@@ -18,6 +18,13 @@ namespace Sweepstakes
             return choice;
         }
 
+        public static string GetNameOfSweepstakes()
+        {
+            Console.WriteLine("Please enter the name of the sweepstakes: ");
+            string name = Console.ReadLine();
+            return name;
+        }
+
         public static string GetFirstName()
         {
             Console.WriteLine("Please enter your first name: ");
