@@ -22,19 +22,14 @@ namespace Sweepstakes
         public void RegisterContestant(Contestant contestant)
         {
             contestant = new Contestant();
-            contestant.ReceiveFirstName();
-            contestant.ReceiveLastName();
-            contestant.ReceiveEmail();
-            contestant.ReceiveAddress();
-            contestant.ReceiveRegistrationNumber();
             Dictionary<int, string> contestants = new Dictionary<int, string>();
             contestants.Add(contestant.registrationNumber, contestant.lastName);
         }
 
-        public string PickWinner()
-        {
+        //public string PickWinner()
+        //{
             
-        }
+        //}
 
         public void PrintContestantInfo(Contestant contestant)
         {

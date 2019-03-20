@@ -6,15 +6,45 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    static class UI
+    public static class UI
     {
         //member variables
 
         //member methods
-        public static GetManagerType()
+        public static string GetManagerType()
         {
             Console.WriteLine("Would you like to use a stack or a queue to manage the sweepstakes?");
-            marketingFirm.choice = Console.ReadLine();
+            string choice = Console.ReadLine();
+            return choice;
         }
+
+        public static string GetFirstName()
+        {
+            Console.WriteLine("Please enter your first name: ");
+            string firstName = Console.ReadLine();
+            return firstName;
+        }
+
+        public static string GetLastName()
+        {
+            Console.WriteLine("Please enter your last name: ");
+            string lastName = Console.ReadLine();
+            return lastName;
+        }
+
+        public static string GetEmail()
+        {
+            Console.WriteLine("Please enter your email: ");
+            string email = Console.ReadLine();
+            return email;
+        }
+
+        public static string GetAddress()
+        {
+            Console.WriteLine("Please enter your address: ");
+            string address = Console.ReadLine();
+            return address;
+        }
+
     }
 }

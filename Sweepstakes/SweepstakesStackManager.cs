@@ -8,5 +8,12 @@ namespace Sweepstakes
 {
     class SweepstakesStackManager
     {
+        //member variables
+
+        //constructor
+
+        //member methods
+
+
     }
 }
