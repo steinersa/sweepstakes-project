@@ -15,14 +15,14 @@ namespace Sweepstakes
         // member methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            //Stack <sweepstakes> stack = new Stack();
-            //stack.Push(//name of sweepstakes);
+            Stack <sweepstakes> stack = new Stack();
+            stack.Push(//name of sweepstakes);
         }
 
-        //public Sweepstakes GetSweepstakes()
-        //{
-        //    return
-        //}
+        public Sweepstakes GetSweepstakes()
+        {
+            return
+        }
 
     }
 }

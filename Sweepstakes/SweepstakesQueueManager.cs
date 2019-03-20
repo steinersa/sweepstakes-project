@@ -18,10 +18,10 @@ namespace Sweepstakes
 
         }
 
-        //public Sweepstakes GetSweepstakes()
-        //{
-        //    return
-        //}
+        public Sweepstakes GetSweepstakes()
+        {
+            return
+        }
 
     }
 }

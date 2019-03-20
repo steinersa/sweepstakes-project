@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    public class Sweepstakes
     {
         //member variables
         public string name;
@@ -41,7 +41,10 @@ namespace Sweepstakes
 
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            foreach (KeyValuePair<int, Contestant> thing in contestants)
+            {
+                Console.WriteLine(thing.Key + " is registered to " + thing.Value);
+            }
         }
     }
 }

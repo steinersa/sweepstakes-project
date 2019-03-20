@@ -14,14 +14,14 @@ namespace Sweepstakes
         //constructor
 
         //member methods
-        public void ChooseManagerType(string choice)
+        public Isweepstakes ChooseManagerType(string choice)
         {
             switch (choice.ToLower())
             {
                 case "stack":
-                    //go to stack manager
+                    return new SweepstakesStackManager();
                 case "queue":
-                    //go to queue manager
+                    return new SweepstakesQueueManager();
                 default:
                     throw new ApplicationException(string.Format("Not a valid sweepstakes manager"));
             }
