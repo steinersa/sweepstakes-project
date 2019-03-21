@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class SweepstakesQueueManager : Isweepstakes
+    class SweepstakesQueueManager : ISweepstakes
     {
         // member variables
         Queue<Sweepstakes> queue = new Queue<Sweepstakes>();
+        Sweepstakes sweepstakes = new Sweepstakes("name");
 
         // constructor
 
@@ -23,6 +24,5 @@ namespace Sweepstakes
         {
             return queue.Dequeue();
         }
-
     }
 }

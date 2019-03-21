@@ -10,11 +10,16 @@ namespace Sweepstakes
     {
         //member variables
         public string choice;
+        Contestant contestant = new Contestant();
 
         //constructor
+        public MarketingFirm()
+        {
+
+        }
 
         //member methods
-        public Isweepstakes ChooseManagerType(string choice)
+        public ISweepstakes ChooseManagerType(string choice)
         {
             switch (choice.ToLower())
             {

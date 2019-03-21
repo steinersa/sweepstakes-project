@@ -52,6 +52,5 @@ namespace Sweepstakes
             string address = Console.ReadLine();
             return address;
         }
-
     }
 }

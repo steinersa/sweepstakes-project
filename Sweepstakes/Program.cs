@@ -15,8 +15,11 @@ namespace Sweepstakes
             string lastName = UI.GetLastName();
             string email = UI.GetEmail();
             string address = UI.GetAddress();
-           
-            MarketingFirm marketingFirm = new MarketingFirm(/*manager interface*/);
+            string name = UI.GetNameOfSweepstakes();
+
+            ISweepstakes SweepstakesStackManager = new SweepstakesStackManager();
+            ISweepstakes SweepstakesQueueManager = new SweepstakesQueueManager();
+            MarketingFirm marketingFirm = new MarketingFirm();
         }
     }
 }

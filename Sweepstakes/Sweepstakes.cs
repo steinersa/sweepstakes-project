@@ -43,7 +43,7 @@ namespace Sweepstakes
         {
             foreach (KeyValuePair<int, Contestant> thing in contestants)
             {
-                Console.WriteLine(thing.Key + " is registered to " + thing.Value);
+                Console.WriteLine("Contestant: " + thing.Key + " is registered to " + thing.Value);
             }
         }
     }
